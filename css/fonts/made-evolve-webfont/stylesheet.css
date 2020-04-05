@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Halfomania';
+    src: local('Halfomania Regular'), local('Halfomania-Regular'),
+        url('Halfomania-Regular.woff2') format('woff2'),
+        url('Halfomania-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE Evolve Sans';
+    src: local('MADE Evolve Sans Bold'), local('MADEEvolveSans-Bold'),
+        url('MADEEvolveSans-Bold.woff2') format('woff2'),
+        url('MADEEvolveSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE Evolve Sans EVO';
+    src: local('MADE Evolve Sans EVO Bold'), local('MADEEvolveSansEVO-Bold'),
+        url('MADEEvolveSansEVO-Bold.woff2') format('woff2'),
+        url('MADEEvolveSansEVO-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE Evolve Sans';
+    src: local('MADE Evolve Sans Medium'), local('MADEEvolveSans-Medium'),
+        url('MADEEvolveSans-Medium.woff2') format('woff2'),
+        url('MADEEvolveSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE Evolve Sans EVO';
+    src: local('MADE Evolve Sans EVO'), local('MADEEvolveSansEVO'),
+        url('MADEEvolveSansEVO.woff2') format('woff2'),
+        url('MADEEvolveSansEVO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE Evolve Sans';
+    src: local('MADE Evolve Sans'), local('MADEEvolveSans'),
+        url('MADEEvolveSans.woff2') format('woff2'),
+        url('MADEEvolveSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE Evolve Sans EVO';
+    src: local('MADE Evolve Sans EVO Thin'), local('MADEEvolveSansEVO-Thin'),
+        url('MADEEvolveSansEVO-Thin.woff2') format('woff2'),
+        url('MADEEvolveSansEVO-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE Evolve Sans EVO';
+    src: local('MADE Evolve Sans EVO Light'), local('MADEEvolveSansEVO-Light'),
+        url('MADEEvolveSansEVO-Light.woff2') format('woff2'),
+        url('MADEEvolveSansEVO-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE Evolve Sans';
+    src: local('MADE Evolve Sans Light'), local('MADEEvolveSans-Light'),
+        url('MADEEvolveSans-Light.woff2') format('woff2'),
+        url('MADEEvolveSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE Evolve Sans';
+    src: local('MADE Evolve Sans Thin'), local('MADEEvolveSans-Thin'),
+        url('MADEEvolveSans-Thin.woff2') format('woff2'),
+        url('MADEEvolveSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MADE Evolve Sans EVO';
+    src: local('MADE Evolve Sans EVO Medium'), local('MADEEvolveSansEVO-Medium'),
+        url('MADEEvolveSansEVO-Medium.woff2') format('woff2'),
+        url('MADEEvolveSansEVO-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+

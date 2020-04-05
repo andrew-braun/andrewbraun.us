@@ -1,0 +1,19 @@
+{
+  "name": "andrewbraun.us",
+  "version": "1.0.0",
+  "description": "Andrew Braun's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-braun/andrewbraun.us.git"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrew-braun/andrewbraun.us/issues"
+  },
+  "homepage": "https://github.com/andrew-braun/andrewbraun.us#readme"
+}

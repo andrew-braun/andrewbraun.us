@@ -1,3 +1,49 @@
+/* Import fonts */
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code Regular'), local('FiraCode-Regular'),
+      url('fonts/fira-code-webfont/FiraCode-Regular.woff2') format('woff2'),
+      url('fonts/fira-code-webfont/FiraCode-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code Retina'), local('FiraCode-Retina'),
+      url('fonts/fira-code-webfont/FiraCode-Retina.woff2') format('woff2'),
+      url('fonts/fira-code-webfont/FiraCode-Retina.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code Bold'), local('FiraCode-Bold'),
+      url('fonts/fira-code-webfont/FiraCode-Bold.woff2') format('woff2'),
+      url('fonts/fira-code-webfont/FiraCode-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code Medium'), local('FiraCode-Medium'),
+      url('fonts/fira-code-webfont/FiraCode-Medium.woff2') format('woff2'),
+      url('fonts/fira-code-webfont/FiraCode-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code Light'), local('FiraCode-Light'),
+      url('fonts/fira-code-webfont/FiraCode-Light.woff2') format('woff2'),
+      url('fonts/fira-code-webfont/FiraCode-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
 html {
   font-size: 10px;
 }
@@ -8,6 +54,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3rem;
+  font-family: 'Fira Code';
+}
+
+p {
+  font-family: 'Fira Code';
+  text-align: center;
+  font-size: 2rem;
 }
 
 /* Styles specific to the front page */
