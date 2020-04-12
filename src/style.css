@@ -1,0 +1,120 @@
+/* Import assets/fonts */
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code Regular'), local('FiraCode-Regular'),
+      url('/assets/font/fira-code-webfont/FiraCode-Regular.woff2') format('woff2'),
+      url('/assets/font/fira-code-webfont/FiraCode-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code Retina'), local('FiraCode-Retina'),
+      url('/assets/font/fira-code-webfont/FiraCode-Retina.woff2') format('woff2'),
+      url('/assets/font/fira-code-webfont/FiraCode-Retina.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code Bold'), local('FiraCode-Bold'),
+      url('/assets/font/fira-code-webfont/FiraCode-Bold.woff2') format('woff2'),
+      url('/assets/font/fira-code-webfont/FiraCode-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code Medium'), local('FiraCode-Medium'),
+      url('/assets/font/fira-code-webfont/FiraCode-Medium.woff2') format('woff2'),
+      url('/assets/font/fira-code-webfont/FiraCode-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code Light'), local('FiraCode-Light'),
+      url('/assets/font/fira-code-webfont/FiraCode-Light.woff2') format('woff2'),
+      url('/assets/font/fira-code-webfont/FiraCode-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'MADE Evolve Sans EVO';
+  src: local('MADE Evolve Sans EVO Bold'), local('MADEEvolveSansEVO-Bold'),
+      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO-Bold.woff2') format('woff2'),
+      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'MADE Evolve Sans EVO';
+  src: local('MADE Evolve Sans EVO'), local('MADEEvolveSansEVO'),
+      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO.woff2') format('woff2'),
+      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+
+@font-face {
+  font-family: 'MADE Evolve Sans EVO';
+  src: local('MADE Evolve Sans EVO Thin'), local('MADEEvolveSansEVO-Thin'),
+      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO-Thin.woff2') format('woff2'),
+      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: fallback;
+}
+
+
+html {
+  font-size: 10px;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'MADE Evolve Sans EVO', "Trebuchet MS", Helvetica, sans-serif
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3  {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-family: 'Fira Code', "Lucida Console", Monaco, monospace;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: retina;
+}
+
+/* FRONT PAGE STYLES */
+
+ /* MAIN PAGE HEADING */
+#front-page-heading {
+  text-align: center;
+}
