@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'Fira Code';
   src: local('Fira Code Regular'), local('FiraCode-Regular'),
-      url('/assets/font/fira-code-webfont/FiraCode-Regular.woff2') format('woff2'),
-      url('/assets/font/fira-code-webfont/FiraCode-Regular.woff') format('woff');
+      url('../assets/font/fira-code-webfont/FiraCode-Regular.woff2') format('woff2'),
+      url('../assets/font/fira-code-webfont/FiraCode-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -12,8 +12,8 @@
 @font-face {
   font-family: 'Fira Code';
   src: local('Fira Code Retina'), local('FiraCode-Retina'),
-      url('/assets/font/fira-code-webfont/FiraCode-Retina.woff2') format('woff2'),
-      url('/assets/font/fira-code-webfont/FiraCode-Retina.woff') format('woff');
+      url('../assets/font/fira-code-webfont/FiraCode-Retina.woff2') format('woff2'),
+      url('../assets/font/fira-code-webfont/FiraCode-Retina.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -22,8 +22,8 @@
 @font-face {
   font-family: 'Fira Code';
   src: local('Fira Code Bold'), local('FiraCode-Bold'),
-      url('/assets/font/fira-code-webfont/FiraCode-Bold.woff2') format('woff2'),
-      url('/assets/font/fira-code-webfont/FiraCode-Bold.woff') format('woff');
+      url('../assets/font/fira-code-webfont/FiraCode-Bold.woff2') format('woff2'),
+      url('../assets/font/fira-code-webfont/FiraCode-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -32,8 +32,8 @@
 @font-face {
   font-family: 'Fira Code';
   src: local('Fira Code Medium'), local('FiraCode-Medium'),
-      url('/assets/font/fira-code-webfont/FiraCode-Medium.woff2') format('woff2'),
-      url('/assets/font/fira-code-webfont/FiraCode-Medium.woff') format('woff');
+      url('../assets/font/fira-code-webfont/FiraCode-Medium.woff2') format('woff2'),
+      url('../assets/font/fira-code-webfont/FiraCode-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -42,8 +42,8 @@
 @font-face {
   font-family: 'Fira Code';
   src: local('Fira Code Light'), local('FiraCode-Light'),
-      url('/assets/font/fira-code-webfont/FiraCode-Light.woff2') format('woff2'),
-      url('/assets/font/fira-code-webfont/FiraCode-Light.woff') format('woff');
+      url('../assets/font/fira-code-webfont/FiraCode-Light.woff2') format('woff2'),
+      url('../assets/font/fira-code-webfont/FiraCode-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -52,8 +52,8 @@
 @font-face {
   font-family: 'MADE Evolve Sans EVO';
   src: local('MADE Evolve Sans EVO Bold'), local('MADEEvolveSansEVO-Bold'),
-      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO-Bold.woff2') format('woff2'),
-      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO-Bold.woff') format('woff');
+      url('../assets/font/made-evolve-webfont/MADEEvolveSansEVO-Bold.woff2') format('woff2'),
+      url('../assets/font/made-evolve-webfont/MADEEvolveSansEVO-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -62,8 +62,8 @@
 @font-face {
   font-family: 'MADE Evolve Sans EVO';
   src: local('MADE Evolve Sans EVO'), local('MADEEvolveSansEVO'),
-      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO.woff2') format('woff2'),
-      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO.woff') format('woff');
+      url('../assets/font/made-evolve-webfont/MADEEvolveSansEVO.woff2') format('woff2'),
+      url('../assets/font/made-evolve-webfont/MADEEvolveSansEVO.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -73,8 +73,8 @@
 @font-face {
   font-family: 'MADE Evolve Sans EVO';
   src: local('MADE Evolve Sans EVO Thin'), local('MADEEvolveSansEVO-Thin'),
-      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO-Thin.woff2') format('woff2'),
-      url('/assets/font/made-evolve-webfont/MADEEvolveSansEVO-Thin.woff') format('woff');
+      url('../assets/font/made-evolve-webfont/MADEEvolveSansEVO-Thin.woff2') format('woff2'),
+      url('../assets/font/made-evolve-webfont/MADEEvolveSansEVO-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
