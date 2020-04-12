@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Quick';
-    src: local('Quick'),
-        url('Quick.woff2') format('woff2'),
-        url('Quick.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-

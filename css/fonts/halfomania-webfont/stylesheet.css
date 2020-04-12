@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Halfomania';
-    src: local('Halfomania Regular'), local('Halfomania-Regular'),
-        url('Halfomania-Regular.woff2') format('woff2'),
-        url('Halfomania-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
