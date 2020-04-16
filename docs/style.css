@@ -53,6 +53,10 @@ p {
 
 /* FRONT PAGE STYLES */
 .page-section {
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+
   width: 100vw;
 }
 
@@ -93,10 +97,6 @@ p {
 
 /* Portfolio intro section */
 #portfolio-link-section {
-  display: grid;
-  grid-template-rows: repeat(12, 1fr);
-  grid-template-columns: repeat(12, 1fr);
-
   height: 80vh;
   margin: 3rem 1rem 0rem 1rem;
 }
@@ -109,9 +109,6 @@ p {
 }
 
 
-.link-title-block {
-
-}
 
 .link-title-block h3 {
   padding: .5rem 0 .5rem 0;
@@ -139,9 +136,11 @@ p {
 .link-block {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   height: 100%;
   padding-top: 2rem;
+
+  background: hsla(0, 0%, 0%, 0.2);
 }
 
 .link-block-1 {
@@ -156,9 +155,35 @@ p {
 
 .link-block-3 {
   grid-area: hire;
-
+  border-top: 1px solid black;
 }
 
 .portfolio-link {
   display: block;
+}
+
+/* PORTFOLIO SECTION */
+
+.page-section-sidebar {
+  grid-column: 1 / 4;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: hsla(0, 0%, 0%, 0.2);
+}
+.page-section-sidebar h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.sidebar-link-list {
+  
+  list-style: none;
+}
+
+.section-content-container {
+  grid-column: 4 / 13;
+
+  background-color: hsla(280, 80%, 45%, 1);
 }
