@@ -8,6 +8,7 @@
 html {
   font-size: 10px;
   font-family: 'Fira Code', "Lucida Console", Monaco, monospace;
+
 }
 
 /* Heading styles */
@@ -53,7 +54,7 @@ p {
 
 /* FRONT PAGE STYLES */
 .page-section {
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 20vh;
 }
 
@@ -167,7 +168,7 @@ p {
 
 .portfolio-page-section {
   display: flex;
-  
+  max-width: 10vw;
 }
 
 .page-section-sidebar {
@@ -190,9 +191,6 @@ p {
 }
 
 .section-content-container {
-  flex-basis: auto;
-  flex-grow: 1;
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -201,21 +199,25 @@ p {
   background-color: hsla(280, 80%, 45%, 1);
 }
 
+.main-content-container {
+
+}
+
 .section-content-container h2 {
   text-align: center;
 }
 
 .portfolio-item {
-  flex-basis: auto;
-  flex-grow: auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  min-width: 150px;
-  min-height: 150px;
+  min-width: 0;
+  min-height: 0;
+  width: 150px;
+  height: 150px;
 
   margin: 5px;
   background-color: var(--main-white);
