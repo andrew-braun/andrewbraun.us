@@ -264,3 +264,35 @@ p {
   margin: 5px;
   background-color: var(--main-white);
 }
+
+
+
+/* CONTACT SECTION */
+#contact-section h2 {
+  text-align: center;
+}
+
+.contact-form-container {
+  width: 30rem;
+  padding: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin: 1rem 0rem 1rem 0rem;
+}
+.contact-label {
+  display: none;
+}
+
+.contact-input {
+  width: 100%;
+}
+
+#message {
+  height: 15rem;
+}
