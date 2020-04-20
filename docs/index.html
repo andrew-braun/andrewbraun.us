@@ -34,7 +34,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <section id="header-section">
+  <section class="header-section" id="main-header-section">
     <header>
       <h1 id="front-page-heading">Andrew Braun</h1>
     </header>
@@ -55,7 +55,12 @@
   </section>  
 
   <section class="page-section" id="portfolio-link-section">
-    <div class="link-container" id="dev-link-container">
+    <div class="hero-block">
+      <h2>Developing websites</h2>
+      <h2>Writing about tech</h2>
+      <h2>Maintaining a normal level of weird</h2>
+    </div>
+    <!-- <div class="link-container" id="dev-link-container">
       <div class="link-title-block" id="dev-link-title-block">
         <h3>Web Developer</h3>
       </div>
@@ -70,26 +75,25 @@
           <a class="portfolio-link" href="#">Hire</a>
         </div>
     </div>
-    </div>
+    </div> -->
   </section>
 
   <section class="page-section portfolio-page-section" id="portfolio-section">
-    <aside class="page-section-sidebar" id="portfolio-section-sidebar">
-      <h2>My hats</h2>
-      <nav class="sidebar-nav" id="portfolio-sidebar-nav">
-        <button class="sidebar-item" id="sidebar-item-1">
+    <div class="section-container">
+      <div class="content-selector-container" id="portfolio-selector-buttons">
+        <button class="content-selector-button" id="portfolio-selector-button-1">
           Web development
         </button>
-        <button class="sidebar-item" id="sidebar-item-2">
+        <button class="content-selector-button" id="portfolio-selector-button-2">
           Writing
         </button>
-      </nav>  
-    </aside>
-    <div class="main-content">
-      <div class="main-content-top-bar">
-        <h2>Check me out on...</h2>
+      </div>
+
+      <div class="section-top-bar">
         <div class="top-bar-item-container">
+          <p>Find me on</p>
           <ul class="top-bar-item-list">
+            
             <li class="top-bar-item">
               <a href="#">GitHub</a>
             </li>
@@ -105,6 +109,7 @@
           </ul>
         </div>
       </div>
+      
       <div class="section-content-container" id="portfolio-content">
         <div class="portfolio-item" id="portfolio-item-1">
           Item 1
@@ -157,11 +162,21 @@
 
         <div class="form-field">
           <label for="message" class="contact-label">Your message</label>
-          <textarea id="message" name="sender-message" placeholder="What are you writing about?" class="contact-input">
+          <textarea id="message" name="sender-message" placeholder="Put your job offers, questions, and clever insults here." class="contact-input">
             </textarea>
           </div>
 
       </form>
+    </div>
+    <div class="social-container" id="social-contacts">
+      <div class="social-contact">
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+    <div id="private-comms">
+      <div class="reveal">
+        PGP key
+      </div>
     </div>
   </section>
 </main>
