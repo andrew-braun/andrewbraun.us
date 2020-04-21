@@ -8,7 +8,7 @@
 html {
   font-size: 10px;
   font-family: 'Fira Code', "Lucida Console", Monaco, monospace;
-
+  scroll-behavior: smooth;
 }
 
 /* Heading styles */
@@ -52,10 +52,12 @@ p {
   font-weight: retina;
 }
 
+
+/* MAIN PAGE CONTAINER */
+
 /* FRONT PAGE STYLES */
 .page-section {
   min-width: 100%;
-  min-height: 10vh;
 }
 
  /* MAIN PAGE HEADER SECTION*/
@@ -95,7 +97,12 @@ p {
 
 /* BANNER SECTION */
 #portfolio-link-section {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: space-between;
+  min-height: 75vh;
+  height: 42rem;
   /* display: grid;
   grid-auto-rows: minmax(100px, 1fr);
   grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
@@ -103,7 +110,15 @@ p {
 }
 
 .hero-block {
-  margin-top: 15vh;
+  margin-top: 8vh;
+}
+
+.top-page-scroll-container {
+
+}
+
+.top-page-scroll-container .lnr-chevron-down {
+  font-size: 5rem;
 }
 
   /* minimalist link boxes*/
@@ -168,10 +183,12 @@ p {
   display: block;
 }
 
+
+
 /* PORTFOLIO SECTION */
 .portfolio-page-section {
   display: flex;
-  margin-top: 20vh;
+  padding-top: 1vh;
 }
 
 .section-content-container {
@@ -214,8 +231,6 @@ p {
 
 .top-bar-item-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
 
   width: 100%;
   border-bottom: 1px dashed white;
@@ -236,16 +251,29 @@ p {
 }
 
 .top-bar-item {
-  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 0%, 50%, 0.3);
+  padding: .5rem;
   margin: .5rem;
   text-align: center;
-  min-width: 5rem;
-  min-height: 5rem;
+  min-width: 7rem;
+  min-height: 7rem;
 }
 
-.top-bar-item a {
+.top-bar-item .social-item-link {
+  display: flex;
+  flex-direction: column;
   color: white;
   text-decoration: none;
+}
+
+.top-bar-item .social-item-link .socicon {
+  font-size: 4rem;
+  color: var(--main-white);
+  margin: .5rem;
 }
 
 /* portfolio items */
@@ -258,8 +286,8 @@ p {
 
   min-width: 0;
   min-height: 0;
-  width: 150px;
-  height: 150px;
+  width: 20rem;
+  height: 20rem;
 
   margin: 5px;
   background-color: var(--main-white);
