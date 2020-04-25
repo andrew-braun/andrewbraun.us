@@ -82,7 +82,7 @@
   </section>
 
   <section class="page-section portfolio-page-section" id="portfolio-section">
-    <div class="section-container">
+    <div>
 
       <div class="content-selector-container" id="portfolio-selector-buttons">
         <button class="content-selector-button" id="portfolio-selector-button-1">
@@ -93,33 +93,33 @@
         </button>
       </div>
       
-      <div class="portfolio-layout-grid">
+      <div class="section-container">
         
-        <div class="section-content-container" id="portfolio-content">
+        <div class="section-container-content" id="portfolio-content">
           
-          <div class="section-top-bar">
-            <div class="top-bar-item-container">
+          <div class="external-link-container">
+            <div class="external-link-item-container">
               <p>Find me on</p>
-              <ul class="top-bar-item-list">      
-                <li class="top-bar-item">
+              <ul class="external-link-item-list">      
+                <li class="external-link-item">
                   <a class="social-item-link" href="#">
                     <span class="socicon socicon-github"></span>
                     <span>GitHub</span>
                   </a>
                 </li>
-                <li class="top-bar-item">
+                <li class="external-link-item">
                   <a class="social-item-link" href="#">
                     <span class="socicon socicon-codepen"></span>
                     <span>Codepen</span>
                   </a>
                 </li>
-                <li class="top-bar-item">
+                <li class="external-link-item">
                   <a class="social-item-link" href="#">
                     <span class="socicon socicon-linkedin"></span>
                     <span>LinkedIn</span>
                   </a>
                 </li>
-                <li class="top-bar-item">
+                <li class="external-link-item">
                   <a class="social-item-link" href="#">Other</a>
                 </li>
               </ul>
@@ -162,37 +162,45 @@
   </section>
 
   <section class="page-section contact-page-section" id="contact-section">
-    <h2>Get in touch with me</h2>
-    <div class="contact-form-container" id="contact-form-container">
-      <form class="contact-form" id="main-contact-form">
-        
-        <div class="form-field">
-          <label for="name" class="contact-label">Your name</label>
-          <input type="text" id="name" name="sender-name" placeholder="Your name" class="contact-input">
-        </div>  
+    <header>
+      <h2>Get in touch with me</h2>
+    </header> 
+    <div class="section-container">
+    <div class="section-column">
+      <div class="contact-form-container" id="contact-form-container">
+        <form class="contact-form" id="main-contact-form">
+          
+          <div class="form-field">
+            <label for="name" class="contact-label">Your name</label>
+            <input type="text" id="name" name="sender-name" placeholder="Your name" class="contact-input">
+          </div>  
 
-        <div class="form-field">
-          <label for="contact-email" class="contact-label">Your email</label>
-          <input type="email" id="contact-email" name="sender-email" placeholder="Your email" class="contact-input">
-        </div>
-
-        <div class="form-field">
-          <label for="message" class="contact-label">Your message</label>
-          <textarea id="message" name="sender-message" placeholder="Put your job offers, questions, and clever insults here." class="contact-input">
-            </textarea>
+          <div class="form-field">
+            <label for="contact-email" class="contact-label">Your email</label>
+            <input type="email" id="contact-email" name="sender-email" placeholder="Your email" class="contact-input">
           </div>
 
+          <div class="form-field">
+            <label for="message" class="contact-label">Your message</label>
+            <textarea id="message" name="sender-message" placeholder="Put your job offers, questions, and clever insults here." class="contact-input"></textarea>
+          </div>
+        </div>
       </form>
     </div>
-    <div class="social-container" id="social-contacts">
-      <div class="social-contact">
-        <a href="#">GitHub</a>
+
+    <div class="section-column" id="more-contacts">
+      <div class="social-container" id="social-contacts">
+        <div class="social-contact">
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+      <div id="private-comms">
+        <div class="reveal">
+          PGP key
+        </div>
       </div>
     </div>
-    <div id="private-comms">
-      <div class="reveal">
-        PGP key
-      </div>
+    
     </div>
   </section>
 </main>

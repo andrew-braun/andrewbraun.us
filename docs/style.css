@@ -58,6 +58,7 @@ p {
 /* FRONT PAGE STYLES */
 .page-section {
   min-width: 100%;
+  
 }
 
  /* MAIN PAGE HEADER SECTION*/
@@ -189,7 +190,7 @@ p {
   padding-top: 1vh;
 }
 
-.section-content-container {
+.section-container-content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -220,25 +221,25 @@ p {
   font-size: 1.5rem;
 }
 
-.section-top-bar {
+.external-link-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   min-height: 8rem;
 
-  margin-right: 2rem;: 
+  margin-right: 2rem;
 
   background-color: var(--main-black);
 }
 
-.top-bar-item-container p {
+.external-link-item-container p {
   padding: 0;
   margin: 1rem 0 1rem 0;
 
   font-size: 3rem;
 }
 
-.top-bar-item-list {
+.external-link-item-list {
   display: flex;
 
   align-items: center;
@@ -249,12 +250,12 @@ p {
   list-style: none;
 }
 
-.top-bar-item-container p {
+.external-link-item-container p {
   color: white;
 }
 
 
-.top-bar-item {
+.external-link-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -268,14 +269,14 @@ p {
   min-height: 7rem;
 }
 
-.top-bar-item .social-item-link {
+.external-link-item .social-item-link {
   display: flex;
   flex-direction: column;
   color: white;
   text-decoration: none;
 }
 
-.top-bar-item .social-item-link .socicon {
+.external-link-item .social-item-link .socicon {
   font-size: 4rem;
   color: var(--main-white);
   margin: .5rem;
@@ -300,6 +301,16 @@ p {
 }
 
 /* CONTACT SECTION */
+.contact-page-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+}
+
 #contact-section h2 {
   text-align: center;
 }
@@ -327,4 +338,5 @@ p {
 
 #message {
   height: 15rem;
+  color: black;
 }
