@@ -58,7 +58,7 @@ p {
 /* FRONT PAGE STYLES */
 .page-section {
   min-width: 100%;
-  
+
 }
 
  /* MAIN PAGE HEADER SECTION*/
@@ -225,14 +225,20 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  min-height: 8rem;
 
   margin-right: 2rem;
+}
 
-  background-color: var(--main-black);
+.external-link-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 50rem;
 }
 
 .external-link-item-container p {
+  flex-shrink: 1;
   padding: 0;
   margin: 1rem 0 1rem 0;
 
@@ -265,8 +271,8 @@ p {
   padding: .5rem;
   margin: .5rem;
   text-align: center;
-  min-width: 7rem;
-  min-height: 7rem;
+  min-width: 10rem;
+  min-height: 10rem;
 }
 
 .external-link-item .social-item-link {
@@ -302,13 +308,14 @@ p {
 
 /* CONTACT SECTION */
 .contact-page-section {
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 2rem;
 }
 
 .section-container {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #contact-section h2 {
@@ -328,6 +335,7 @@ p {
 .form-field {
   margin: 1rem 0rem 1rem 0rem;
 }
+
 .contact-label {
   display: none;
 }
@@ -339,4 +347,43 @@ p {
 #message {
   height: 15rem;
   color: black;
+}
+
+#more-contacts {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-contacts .social-item-link span{
+  color: black;
+}
+
+#social-contacts .socicon {
+  color: black;
+}
+
+.key-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 3rem;
+
+  background-color: gray;
+}
+
+.key-header {
+  font-size: 2rem;
+}
+
+.key-body {
+  display: none;
+}
+
+#social-contacts .external-link-item {
+  min-width: 7rem;
+  min-height: 7rem;
 }
