@@ -114,6 +114,23 @@ p {
   margin-top: 8vh;
 }
 
+.hero-block h2 {
+  font-size: 4.5rem;
+}
+
+.hero-block h3 {
+  font-size: 4.0rem;
+}
+
+.hero-block h4 {
+  font-size: 3.5rem;
+}
+
+.hero-block h5 {
+  font-size: 3rem;
+  margin: 0;
+  padding:0;
+}
 .top-page-scroll-container {
 
 }
@@ -225,14 +242,17 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
-  margin-right: 2rem;
+
 }
 
 .external-link-item-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   max-width: 50rem;
 }
@@ -339,6 +359,63 @@ p {
   background-color: hsla(0, 0%, 0%, 0.2);
 }
 
+/* ABOUT ME */
+
+.about-page-section {
+  background-color: purple;
+}
+
+.about-header {
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+.left-sidebar-menu {
+  min-width: 15rem;
+  max-width: 20rem;
+  background-color: gray;
+}
+
+.left-sidebar-list {
+  list-style: none;
+  padding: 0;
+}
+
+.left-sidebar-item {
+  margin: 0;
+}
+
+.left-sidebar-link {
+  display: block;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  background-color: black;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.about-img-container img {
+  max-width: 30rem;
+  object-fit: contain;
+}
+
+.about-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-info-block h3 {
+  text-align: center;
+}
+
+.about-info-block ul {
+  list-style: none;
+}
 /* CONTACT SECTION */
 .contact-page-section {
   padding-bottom: 2rem;
