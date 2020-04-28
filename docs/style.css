@@ -48,7 +48,7 @@ a {
 p {
   font-family: 'Fira Code', "Lucida Console", Monaco, monospace;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: retina;
 }
 
@@ -362,11 +362,12 @@ p {
 /* ABOUT ME */
 
 .about-page-section {
-  background-color: purple;
+  background-color: black;
 }
 
 .about-header {
   text-align: center;
+  color: white;
 }
 
 .about-container {
@@ -378,7 +379,7 @@ p {
 .left-sidebar-menu {
   min-width: 15rem;
   max-width: 20rem;
-  background-color: gray;
+  background-color: black;;
 }
 
 .left-sidebar-list {
@@ -407,6 +408,12 @@ p {
 .about-info {
   display: flex;
   flex-wrap: wrap;
+
+}
+
+.about-info-block {
+  max-width: 25rem;
+  text-align: left;
 }
 
 .about-info-block h3 {
