@@ -82,6 +82,11 @@ p {
 .horizontal-nav-items {
   display: flex;
   list-style-type: none;
+
+}
+
+.left-sidebar-item {
+  text-align: left;
 }
 
 .nav-item a {
@@ -362,7 +367,7 @@ p {
 /* ABOUT ME */
 
 .about-page-section {
-  background-color: black;
+  background-color: gray;
 }
 
 .about-header {
@@ -371,49 +376,72 @@ p {
 }
 
 .about-container {
-  display: flex;
-  background-color: black;
+  display: grid;
+
+  grid-template-columns: 1fr 7fr;
+  grid-template-areas: 
+  "nav content";
+
+  background-color: gray;
   color: white;
 }
 
 .left-sidebar-menu {
+  grid-area: nav;
+  display: flex;
   min-width: 15rem;
-  max-width: 20rem;
-  background-color: black;;
+  padding: 0.5rem;
+
+  background-color: black;
 }
 
 .left-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   list-style: none;
-  padding: 0;
 }
 
 .left-sidebar-item {
   margin: 0;
+  text-align: center;
 }
 
 .left-sidebar-link {
   display: block;
   padding: 1rem 0.5rem 1rem 0.5rem;
-  background-color: black;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: white;
+}
+
+.about-content {
+  grid-area: content;
+}
+
+.about-img-container {
+  position: relative;
+  margin: 1rem;
 }
 
 .about-img-container img {
   max-width: 30rem;
   object-fit: contain;
+  border-radius: 5% 50% 5% 20%;
 }
 
 .about-info {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
 
 }
 
 .about-info-block {
   max-width: 25rem;
-  text-align: left;
+
 }
 
 .about-info-block h3 {
@@ -422,6 +450,10 @@ p {
 
 .about-info-block ul {
   list-style: none;
+}
+
+.about-info-block p {
+  text-align: left;
 }
 /* CONTACT SECTION */
 .contact-page-section {
@@ -503,4 +535,28 @@ p {
 #social-contacts .external-link-item {
   min-width: 7rem;
   min-height: 7rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 720px) {
+  .about-container {
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "nav"
+    "content";
+  }
+
+  .about-info {
+    flex-direction: column-reverse;
+  }
+
+  .left-sidebar-menu {
+    justify-content: center;
+ 
+  }
+  .left-sidebar-list {
+    flex-direction: row;
+  }
 }
