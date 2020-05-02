@@ -55,7 +55,7 @@ p {
 
 /* MAIN PAGE CONTAINER */
 
-/* FRONT PAGE STYLES */
+/* UTILITY STYLES */
 .page-section {
   min-width: 100%;
 
@@ -367,7 +367,7 @@ p {
 /* ABOUT ME */
 
 .about-page-section {
-  background-color: gray;
+  background-color: black;
 }
 
 .about-header {
@@ -382,7 +382,6 @@ p {
   grid-template-areas: 
   "nav content";
 
-  background-color: gray;
   color: white;
 }
 
@@ -392,7 +391,7 @@ p {
   min-width: 15rem;
   padding: 0.5rem;
 
-  background-color: black;
+  background-color: purple;
 }
 
 .left-sidebar-list {
@@ -418,17 +417,20 @@ p {
 
 .about-content {
   grid-area: content;
+  border-top: 2px dashed white;
+
 }
 
 .about-img-container {
-  position: relative;
-  margin: 1rem;
+  padding: 1rem;
+  max-width: 50rem;
+  object-fit: contain;
+  order: 1;
 }
 
 .about-img-container img {
-  max-width: 30rem;
-  object-fit: contain;
-  border-radius: 5% 50% 5% 20%;
+  border-radius: 2rem;
+  max-width: 40rem;
 }
 
 .about-info {
@@ -436,12 +438,20 @@ p {
   flex-wrap: wrap-reverse;
   justify-content: space-around;
   align-items: center;
-
+  min-height: 40rem;
 }
 
 .about-info-block {
-  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 25rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  order: 0;
 
+  font-size: 1.3rem;
+  padding: 2rem;
 }
 
 .about-info-block h3 {
@@ -449,12 +459,14 @@ p {
 }
 
 .about-info-block ul {
-  list-style: none;
+  list-style: square;
 }
 
 .about-info-block p {
   text-align: left;
+  font-size: 1.3rem;
 }
+
 /* CONTACT SECTION */
 .contact-page-section {
   padding-bottom: 2rem;
@@ -548,8 +560,8 @@ p {
     "content";
   }
 
-  .about-info {
-    flex-direction: column-reverse;
+  .about-content {
+    border: none;
   }
 
   .left-sidebar-menu {
