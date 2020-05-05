@@ -396,9 +396,10 @@ code {
 .about-container {
   display: grid;
 
-  grid-template-columns: 1fr 7fr;
+  grid-template-columns: 1fr 7fr 2fr;
   grid-template-areas: 
-  "nav content";
+  "nav content img"
+  "nav content aside";
 
   min-height: 95vh;
   color: white;
@@ -439,10 +440,11 @@ code {
 }
 
 .about-img-container {
+  grid-area: img;
   padding: 1rem;
   max-width: 50rem;
   object-fit: contain;
-  order: 1;
+  margin: auto;
 }
 
 .about-img-container img {
@@ -452,9 +454,8 @@ code {
 
 .about-info {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
   min-height: 40rem;
 }
 
@@ -482,6 +483,12 @@ code {
 .about-info-block p {
   text-align: left;
   font-size: 1.3rem;
+}
+
+.about-content-aside {
+  grid-area: aside;
+
+  text-align: center;
 }
 
 /* CONTACT SECTION */
@@ -602,7 +609,9 @@ code {
     grid-template-columns: auto;
     grid-template-areas: 
     "nav"
-    "content";
+    "img"
+    "content"
+    "aside";
   }
 
   .about-content {
