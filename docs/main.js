@@ -1,7 +1,7 @@
 
 /* Accordion slide */
 const slideDown = () => {
-   console.log(event.target)
+   event.target.style.maxHeight = "100vh";
 }
 
 const pgpKeyContainer = document.querySelector("#pgp-key-container");
