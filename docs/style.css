@@ -385,9 +385,16 @@ code {
 }
 
 #portfolio-scroll-container {
-  height: 100vw;
+  width: 100%;
+  background-color: #000000;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#portfolio-scroll-container a span {
+  width: 100%;
   color: white;
-  background-color: black;
+
 }
 
 /* ABOUT ME */
