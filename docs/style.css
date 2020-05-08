@@ -75,7 +75,7 @@ code {
   padding: 1rem;
   font-family: 'Courier New', Courier, monospace;
   background-color: lightgray;
-  word-wrap; break-word;
+  word-wrap: break-word;
   white-space: pre-wrap;
 }
 
@@ -238,7 +238,7 @@ code {
   align-items: center;
   flex-wrap: wrap;
   
-  padding: 1.5rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
 
   background-color: var(--main-black);
 }
@@ -577,17 +577,25 @@ code {
 .key-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
 
-  padding: 2rem;
+
+
+  overflow: hidden;
+  max-height: 2.5rem;
+  padding: 1rem;
   border-radius: 1rem;
   background-color: gray;
+
+  transition: all 1s ease-in-out;
+}
+
+.key-container:hover {
+  background-color: lightgray;
 }
 
 .key-header {
   font-size: 2rem;
-  margin: 0 auto 0 auto;
+  margin: auto;
   padding: 0;
 }
 
@@ -599,13 +607,13 @@ code {
 .key-fingerprint {
   width: 100%;
   overflow-x: hidden;
+  background-color: lightgray;
 }
 
 .key-body {
-  max-height: 20rem;
   width: 100%;
+  overflow: hidden;
   overflow-y: scroll;
-  overflow-x: hidden;
   user-select: all;
   word-wrap: break-word;
   text-align: left;
@@ -640,4 +648,11 @@ code {
   .left-sidebar-list {
     flex-direction: row;
   }
+}
+
+/* JAVASCRIPT CLASSES */
+.slide-toggle {
+  max-height: 100rem;
+  transition: all 1s ease-in-out;
+  background-color: lightslategray;
 }
