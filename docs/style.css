@@ -233,7 +233,7 @@ code {
 }
 
 .section-container-content {
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
@@ -243,6 +243,13 @@ code {
   background-color: var(--main-black);
 }
 
+#portfolio-section-web-dev {
+  display: initial;
+}
+
+#portfolio-section-writing {
+
+}
 
 /* portfolio section top bar */
 .content-selector-container {
@@ -523,6 +530,10 @@ code {
   flex-wrap: wrap;
 }
 
+#message-form-wrapper {
+  align-self: flex-start;
+}
+
 #contact-section h2 {
   text-align: center;
 }
@@ -577,8 +588,6 @@ code {
 .key-container {
   display: flex;
   flex-direction: column;
-
-
 
   overflow: hidden;
   max-height: 2.5rem;
@@ -654,5 +663,8 @@ code {
 .slide-toggle {
   max-height: 100rem;
   transition: all 1s ease-in-out;
-  background-color: lightslategray;
+}
+
+.activeContent {
+  display: flex;
 }

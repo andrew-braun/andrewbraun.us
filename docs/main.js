@@ -1,6 +1,6 @@
 
-/* Accordion slide */
-const showElement = () => {
+/* Toggle element show/hide */
+const showElementFlex = () => {
    let element = event.target;
    let display = element.style.display;
    element.style.display = display === 'none' ? 'block' : 'none';
@@ -12,6 +12,44 @@ const slideDownToggle = () => {
    element.classList.toggle("slide-toggle");
 }
 
+/* Tabs */
+
+
+
+const tabSwitch = (tabClickEvent) => {
+
+   const tabs = document.querySelectorAll("#portfolio-selector-buttons button");
+
+   for (let i = 0; i < tabs.length; i++) {
+      tabs[i].classList.remove("active");
+   }
+   
+   let currentClickedTab = tabClickEvent.currentTarget;
+   currentClickedTab.classList.add("active");
+   tabClickEvent.preventDefault();
+
+
+   let tabList = document.querySelectorAll(".section-container-content");
+   for (i = 0; i < tabList.length; i++) {
+      tabList[i].classList.remove("activeContent");
+   }
+
+   let clickedTab = tabClickEvent.target;
+   let clickedTabContent = clickedTab.getAttribute("href");
+   let activeTabContent = document.querySelector(clickedTabContent);
+   console.log(activeTabContent);
+
+   activeTabContent.classList.add("activeContent");
+
+}
+
+/* PGP Key container slide */
 const pgpKeyContainer = document.querySelector("#pgp-key-container");
 pgpKeyContainer.addEventListener("click", slideDownToggle);
 
+/* Tab clicks */
+
+let tabList = document.querySelectorAll("#portfolio-selector-buttons button");
+for (tab of tabList) {
+   tab.addEventListener("click", tabSwitch);
+};
