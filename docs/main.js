@@ -59,7 +59,7 @@ for (tab of portfolioTabList) {
 const aboutTabList = document.querySelectorAll(".about-container .left-sidebar-menu .left-sidebar-item .left-sidebar-link");
 for (tab of aboutTabList) {
    tab.addEventListener("click", 
-   (event) => tabSwitchEventHandler(event, ".about-container .left-sidebar-menu .left-sidebar-item .left-sidebar-link", ".about-info"));
+   (event) => tabSwitchEventHandler(event, ".about-container .left-sidebar-menu .left-sidebar-item .left-sidebar-link", ".about-content"));
    console.log(tab);
 };
 

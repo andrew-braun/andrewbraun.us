@@ -423,10 +423,9 @@ code {
 .about-container {
   display: grid;
 
-  grid-template-columns: 1fr 7fr 2fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-areas: 
-  "nav content img"
-  "nav content aside";
+  "nav content";
 
   min-height: 95vh;
   color: white;
@@ -464,10 +463,12 @@ code {
 
 .about-content {
   grid-area: content;
+
+  display: none;
+  flex-wrap: wrap;
 }
 
 .about-img-container {
-  grid-area: img;
   padding: 1rem;
   max-width: 50rem;
   object-fit: contain;
@@ -480,7 +481,7 @@ code {
 }
 
 .about-info {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   min-height: 40rem;
@@ -513,7 +514,6 @@ code {
 }
 
 .about-content-aside {
-  grid-area: aside;
 
   text-align: center;
 }
@@ -651,9 +651,7 @@ code {
     "aside";
   }
 
-  .about-content {
-    border: none;
-  }
+
 
   .left-sidebar-menu {
     justify-content: center;
