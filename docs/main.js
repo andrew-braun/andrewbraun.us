@@ -18,14 +18,15 @@ const slideDownToggle = () => {
 
 const tabSwitch = (tabClickEvent) => {
 
-   const tabs = document.querySelectorAll("#portfolio-selector-buttons button");
+   const tabs = document.querySelectorAll("#portfolio-selector-buttons button a");
 
-   for (let i = 0; i < tabs.length; i++) {
-      tabs[i].classList.remove("active");
+   for (tab of tabs) {
+      tab.classList.remove("activeTab");
+      console.log(tab);
    }
    
    let currentClickedTab = tabClickEvent.currentTarget;
-   currentClickedTab.classList.add("active");
+   currentClickedTab.classList.add("activeTab");
    tabClickEvent.preventDefault();
 
 
@@ -49,7 +50,7 @@ pgpKeyContainer.addEventListener("click", slideDownToggle);
 
 /* Tab clicks */
 
-let tabList = document.querySelectorAll("#portfolio-selector-buttons button");
+let tabList = document.querySelectorAll("#portfolio-selector-buttons button a");
 for (tab of tabList) {
    tab.addEventListener("click", tabSwitch);
 };

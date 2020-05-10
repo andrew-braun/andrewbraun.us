@@ -124,7 +124,7 @@ code {
 }
 
 /* TOP BANNER SECTION */
-#portfolio-link-section {
+#top-hero-section {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -263,11 +263,16 @@ code {
 
 .content-selector-button {
   width: 17rem;
-  margin: 0.2rem 0.3rem 0rem 0rem;
-  padding: 0.5rem;
-  border: none;
+  border: 2px solid black;
+  padding: 0;
 
   font-size: 1.5rem;
+}
+
+.content-selector-button a {
+  display: block;
+  padding: 0;
+  line-height: 3rem;
 }
 
 .external-link-container {
@@ -663,6 +668,10 @@ code {
 .slide-toggle {
   max-height: 100rem;
   transition: all 1s ease-in-out;
+}
+
+.activeTab {
+  
 }
 
 .activeContent {
