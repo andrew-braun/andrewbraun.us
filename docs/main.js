@@ -16,7 +16,7 @@ const slideDownToggle = () => {
 
 
 
-const tabSwitch = (tabClickEvent) => {
+const tabSwitch = () => {
 
    const tabs = document.querySelectorAll("#portfolio-selector-buttons button a");
 
@@ -25,20 +25,43 @@ const tabSwitch = (tabClickEvent) => {
       console.log(tab);
    }
    
-   let currentClickedTab = tabClickEvent.currentTarget;
+   const currentClickedTab = event.currentTarget;
    currentClickedTab.classList.add("activeTab");
-   tabClickEvent.preventDefault();
+   event.preventDefault();
 
-
-   let tabList = document.querySelectorAll(".section-container-content");
-   for (i = 0; i < tabList.length; i++) {
-      tabList[i].classList.remove("activeContent");
+   const tabList = document.querySelectorAll(".section-container-content");
+   for (tab of tabList) {
+      tab.classList.remove("activeContent");
    }
 
-   let clickedTab = tabClickEvent.target;
+   let clickedTab = event.target;
    let clickedTabContent = clickedTab.getAttribute("href");
    let activeTabContent = document.querySelector(clickedTabContent);
-   console.log(activeTabContent);
+
+   activeTabContent.classList.add("activeContent");
+
+}
+
+const tabSwitchEventHandler = (event, tabQuerySelectorAll, contentQuerySelectorAll) => {
+   const tabs = document.querySelectorAll(tabQuerySelectorAll);
+
+   for (tab of tabs) {
+      tab.classList.remove("activeTab");
+      console.log(tab);
+   }
+   
+   const currentClickedTab = event.currentTarget;
+   currentClickedTab.classList.add("activeTab");
+   event.preventDefault();
+
+   const tabContent = document.querySelectorAll(contentQuerySelectorAll);
+   for (tab of tabContent) {
+      tab.classList.remove("activeContent");
+   }
+
+   let clickedTab = event.target;
+   let clickedTabContent = clickedTab.getAttribute("href");
+   let activeTabContent = document.querySelector(clickedTabContent);
 
    activeTabContent.classList.add("activeContent");
 
@@ -50,7 +73,14 @@ pgpKeyContainer.addEventListener("click", slideDownToggle);
 
 /* Tab clicks */
 
-let tabList = document.querySelectorAll("#portfolio-selector-buttons button a");
-for (tab of tabList) {
-   tab.addEventListener("click", tabSwitch);
+// let tabList = document.querySelectorAll("#portfolio-selector-buttons button a");
+// for (tab of tabList) {
+//    tab.addEventListener("click", tabSwitch);
+// };
+
+
+let portfolioTabList = document.querySelectorAll("#portfolio-selector-buttons button a");
+for (tab of portfolioTabList) {
+   tab.addEventListener("click", 
+   (event) => tabSwitchEventHandler(event, "#portfolio-selector-buttons button a", ".section-container-content"));
 };
