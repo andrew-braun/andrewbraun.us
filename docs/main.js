@@ -14,40 +14,11 @@ const slideDownToggle = () => {
 
 /* Tabs */
 
-
-
-const tabSwitch = () => {
-
-   const tabs = document.querySelectorAll("#portfolio-selector-buttons button a");
-
-   for (tab of tabs) {
-      tab.classList.remove("activeTab");
-      console.log(tab);
-   }
-   
-   const currentClickedTab = event.currentTarget;
-   currentClickedTab.classList.add("activeTab");
-   event.preventDefault();
-
-   const tabList = document.querySelectorAll(".section-container-content");
-   for (tab of tabList) {
-      tab.classList.remove("activeContent");
-   }
-
-   let clickedTab = event.target;
-   let clickedTabContent = clickedTab.getAttribute("href");
-   let activeTabContent = document.querySelector(clickedTabContent);
-
-   activeTabContent.classList.add("activeContent");
-
-}
-
 const tabSwitchEventHandler = (event, tabQuerySelectorAll, contentQuerySelectorAll) => {
    const tabs = document.querySelectorAll(tabQuerySelectorAll);
 
    for (tab of tabs) {
       tab.classList.remove("activeTab");
-      console.log(tab);
    }
    
    const currentClickedTab = event.currentTarget;
@@ -79,8 +50,16 @@ pgpKeyContainer.addEventListener("click", slideDownToggle);
 // };
 
 
-let portfolioTabList = document.querySelectorAll("#portfolio-selector-buttons button a");
+const portfolioTabList = document.querySelectorAll("#portfolio-selector-buttons button a");
 for (tab of portfolioTabList) {
    tab.addEventListener("click", 
    (event) => tabSwitchEventHandler(event, "#portfolio-selector-buttons button a", ".section-container-content"));
 };
+
+const aboutTabList = document.querySelectorAll(".about-container .left-sidebar-menu .left-sidebar-item .left-sidebar-link");
+for (tab of aboutTabList) {
+   tab.addEventListener("click", 
+   (event) => tabSwitchEventHandler(event, ".about-container .left-sidebar-menu .left-sidebar-item .left-sidebar-link", ".about-info"));
+   console.log(tab);
+};
+
