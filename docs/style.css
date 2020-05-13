@@ -9,6 +9,7 @@ html {
   font-size: 10px;
   font-family: 'Fira Code', "Lucida Console", Monaco, monospace;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 /* Heading styles */
@@ -412,7 +413,7 @@ code {
 /* ABOUT ME */
 
 .about-page-section {
-  background-color: gray;
+  background-color: hsla(0, 0%, 0%, 0.9);
 }
 
 .about-header {
@@ -423,7 +424,7 @@ code {
 .about-container {
   display: grid;
 
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-areas: 
   "nav content";
 
@@ -437,7 +438,7 @@ code {
   min-width: 15rem;
   padding: 0.5rem;
 
-  background-color: purple;
+  background-color: darkslateblue;
 }
 
 .left-sidebar-list {
@@ -462,27 +463,38 @@ code {
 }
 
 .about-content {
-  grid-area: content;
-
   display: none;
   flex-wrap: wrap;
 }
 
 #about-overview-content {
   display: grid;
-  grid-template-columns: minmax(1fr, 80%), minmax(1fr, 20%);
+  grid-template-columns: 4fr 1fr;
   grid-template-areas: 
-  "content image"
-  "content aside"
-  "content aside";
+  "header image"
+  "content content"
+  "content content";
 }
 
-.about-info-main-column {
+.about-header {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  grid-area: header;
+}
+
+.about-header-text {
+  font-size: 1.2rem;
+}
+
+.about-info-row {
+  grid-area: content;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-info-side-column {
+  grid-area: image;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -496,10 +508,9 @@ code {
 }
 
 .about-img-container img {
-  flex-basis: 50rem;
-  flex-shrink: 1;
-  border-radius: 2rem;
-  max-width: 40rem;
+  flex-basis: 35rem;
+  border-radius: 1.5rem;
+  max-width: 35rem;
 }
 
 .about-info {
@@ -510,7 +521,7 @@ code {
 }
 
 #about-overview-content .about-info {
-  grid-area: content;
+  
 }
 
 .about-info-block {
@@ -678,9 +689,9 @@ code {
 
   #about-overview-content {
     grid-template-areas: 
-    "content"
+    "header"
     "image"
-    "aside"
+    "content"
   }
 
 
