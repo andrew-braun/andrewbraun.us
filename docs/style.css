@@ -9,7 +9,6 @@ html {
   font-size: 10px;
   font-family: 'Fira Code', "Lucida Console", Monaco, monospace;
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 /* Heading styles */
@@ -360,7 +359,7 @@ code {
   width: 25rem;
   height: auto;
 
-  padding-top: 1rem;
+
   margin: 1rem;
   background-color: var(--main-white);
 }
@@ -376,14 +375,18 @@ code {
 }
 
 .portfolio-item-image-container {
-
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
 }
 
 .portfolio-item-image {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
   border: 0;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .portfolio-item-title {
@@ -511,6 +514,7 @@ code {
   flex-basis: 35rem;
   border-radius: 1.5rem;
   max-width: 35rem;
+
 }
 
 .about-info {
