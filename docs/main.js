@@ -53,7 +53,7 @@ pgpKeyContainer.addEventListener("click", slideDownToggle);
 const portfolioTabList = document.querySelectorAll("#portfolio-selector-buttons button a");
 for (tab of portfolioTabList) {
    tab.addEventListener("click", 
-   (event) => tabSwitchEventHandler(event, "#portfolio-selector-buttons button a", ".section-container-content"));
+   (event) => tabSwitchEventHandler(event, "#portfolio-selector-buttons button a", ".tabbed-container-content"));
 };
 
 const aboutTabList = document.querySelectorAll(".about-container .left-sidebar-menu .left-sidebar-item .left-sidebar-link");
