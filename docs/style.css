@@ -1,12 +1,17 @@
 /* Set variables */
 :root {
-  --main-black: hsla(0, 0%, 0%, 1);
-  --main-white: hsla(0, 100%, 100%, 1);
-  --main-purple: hsla(280, 80%, 45%, 1);
+  --main-black: hsla(24, 14%, 7%, 1);
+  --main-gray: hsla(0, 0%, 20%, 1);
+  --main-white: hsla(240, 4%, 95%, 1);
+  --main-blue: hsla(205, 71%, 18%, 1);
+  --main-red: hsla(356, 63%, 54%, 1);
 }
 
 html {
   font-size: 10px;
+  color: black;
+  background-color: var(--main-white);
+  overflow-x: hidden;
   font-family: 'Fira Code', "Lucida Console", Monaco, monospace;
   scroll-behavior: smooth;
 }
@@ -59,8 +64,8 @@ p {
 
 .action-button {
   padding: 1rem;
-  background-color: black;
-  color: white;
+  background-color: var(--main-black);
+  color: var(--main-white);
   border-width: 0px;
   border-radius: 1rem;
 }
@@ -165,16 +170,15 @@ code {
   width: min-content;
 
   display: flex;
- 
-  background-color: black;
 }
 
 .content-selector-button {
   width: 17rem;
-  border: 2px solid black;
-  border-width: 2px 2px 0px 0px;
   padding: 0;
-
+  border: 2px solid var(--main-blue);
+  border-width: 2px 2px 0px 0px;
+  
+  background-color: var(--main-white);
   font-size: 1.5rem;
 }
 
@@ -182,6 +186,7 @@ code {
   display: block;
   padding: 0;
   line-height: 3rem;
+  color: var(--main-gray);
 }
 
 /* External link container (as flex item) */
@@ -206,7 +211,7 @@ code {
   max-width: 30%;
   padding: .5rem;
   margin: .5rem;
-  background-color: hsla(0, 0%, 50%, 0.3);
+  background-color: hsla(0, 0%, 40%, 0.35);
   border-radius: 0.3rem;
   text-align: center;
 }
@@ -218,14 +223,14 @@ code {
   min-width: 10rem;
   flex-shrink: 1;
   flex-grow: 1;
-  color: white;
+  color: var(--main-white);
   font-size: 1.3rem;
 }
 
 .social-icon {
   font-size: 5rem;
   margin: .5rem;
-  color: white;
+  color: var(--main-white);
 }
 
 /* portfolio items */
@@ -236,7 +241,7 @@ code {
 
   min-width: 35rem;
   margin: 1rem;
-  background-color: var(--main-white);
+  background-color: var(--main-gray);
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -270,6 +275,7 @@ code {
 
   font-size: 1.8rem;
   background-color: hsla(0, 0%, 0%, 0.2);
+  color: var(--main-white);
 }
 
 
@@ -290,7 +296,8 @@ code {
 /* ABOUT ME */
 
 .about-page-section {
-  background-color: hsla(0, 0%, 0%, 0.9);
+  background-color: var(--main-blue);
+  padding: 0;
 }
 
 .about-header {
@@ -306,38 +313,38 @@ code {
   "nav content";
 
   min-height: 95vh;
-  color: white;
+  color: var(--black);
+
 }
 
-.left-sidebar-item {
-  text-align: left;
-}
+
 
 .left-sidebar-menu {
   grid-area: nav;
   display: flex;
-  min-width: 15rem;
-  padding: 0.5rem;
+  width: 100%;
 
-  background-color: darkslateblue;
+  background-color: var(--main-gray);
 }
 
 .left-sidebar-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 
   list-style: none;
 }
 
 .left-sidebar-item {
   margin: 0;
-  text-align: center;
+  text-align: left;
+  width: 100%;
 }
 
 .left-sidebar-link {
   display: block;
-  padding: 1rem 0.5rem 1rem 0.5rem;
+  padding: 1.5rem 0.5rem 1.5rem 1rem;
   text-transform: uppercase;
   font-size: 1.8rem;
   color: white;
@@ -376,11 +383,14 @@ code {
   font-size: 1.5rem;
   text-align: left;
   padding: 1rem;
-  margin: 0;
+  margin: 1rem;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  line-height: 2rem;
+  color: var(--main-black);
 }
 
 #about-header-text-1 {
-
+  
 }
 
 
@@ -435,21 +445,38 @@ code {
   flex-shrink: 1;
 
   padding: 0rem 2rem 2rem 2rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 
 }
 
 .about-info-block h3 {
   text-align: center;
+  color: var(--main-white);
 }
 
-.about-info-block ul {
-  list-style: square;
+.about-info-block ul li {
+  list-style: none;
+  padding: 0.3rem;
 }
 
 .about-info-block p {
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  color: var(--main-black);
+}
+
+.about-info-block-1 {
+  background-color: hsla(24, 14%, 7%, 0.6);
+  color: var(--main-white)
+}
+
+.about-info-block-2 {
+  background-color: var(--main-red);
+}
+
+.about-info-block-3 {
+  background-color: var(--main-gray);
+  color: var(--main-white)
 }
 
 .about-content-aside {
@@ -463,15 +490,18 @@ code {
 .contact-page-section {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
+  align-items: space-between;  
 
   padding-bottom: 2rem;
   min-height: 90vh;
+  background-color: var(--main-red);
+  color: var(--main-black);
 }
 
 .contact-section-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #message-form-wrapper {
@@ -502,11 +532,21 @@ code {
 
 .contact-input {
   width: 100%;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: var(--main-gray);
+  color: var(--main-white)
 }
 
 #message {
   height: 15rem;
-  color: black;
+  color: var(--main-black);
+  border: 0;
+  background-image: linear-gradient(
+                    180deg,
+                    var(--main-white),
+                    var(--main-red));
 }
 
 .form-submit-button {
@@ -522,8 +562,13 @@ code {
 }
 
 #social-contacts .social-item-link span{
-  color: black;
+  color: var(--main-white);
 }
+
+#more-contacts .external-link-item {
+  background-color: var(--main-blue);
+}
+
 
 #social-contacts .socicon {
   color: black;
@@ -537,8 +582,10 @@ code {
   max-height: 2.5rem;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: gray;
-
+  background-image: linear-gradient(90deg, 
+                    var(--main-gray),
+                    var(--main-black),
+                    var(--main-gray));
   transition: all 1s ease-in-out;
 }
 
@@ -550,6 +597,7 @@ code {
   font-size: 2rem;
   margin: auto;
   padding: 0;
+  color: var(--main-white);
 }
 
 .key-header h4 {
@@ -600,11 +648,29 @@ code {
 
 
   .left-sidebar-menu {
-    justify-content: center;
+
  
   }
   .left-sidebar-list {
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+
+  .left-sidebar-item {
+    height: 100%;
+  }
+  .left-sidebar-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .left-sidebar-item a .lnr {
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -632,8 +698,9 @@ code {
 }
 
 .activeTab {
-  
+  background-color: var(--main-red);
 }
+
 
 .activeContent {
   display: flex;
