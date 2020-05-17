@@ -232,12 +232,13 @@ code {
 .portfolio-item {
   display: flex;
   flex-grow: 1;
-
   flex-basis: 35rem;
 
   min-width: 35rem;
   margin: 1rem;
   background-color: var(--main-white);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .portfolio-item-link {
@@ -253,6 +254,7 @@ code {
   flex-shrink: 1;
   min-width: 0;
   line-height: 0;
+  overflow: hidden;
 }
 
 .portfolio-item-image {
@@ -358,12 +360,32 @@ code {
 .about-header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+
+  align-items: center;
   grid-area: header;
 }
 
+.about-header h2 {
+  align-self: flex-start;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
 .about-header-text {
-  font-size: 1.2rem;
+  flex-basis: 75%;
+  max-width: 75%;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 1rem;
+  margin: 0;
+}
+
+#about-header-text-1 {
+
+}
+
+
+#about-header-text-2 {
+  align-self: flex-end;
 }
 
 .about-info-row {
@@ -376,7 +398,7 @@ code {
   grid-area: image;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .about-img-container {
@@ -412,8 +434,9 @@ code {
   flex-grow: 1;
   flex-shrink: 1;
 
+  padding: 0rem 2rem 2rem 2rem;
   font-size: 1.3rem;
-  padding: 2rem;
+
 }
 
 .about-info-block h3 {
@@ -444,6 +467,11 @@ code {
 
   padding-bottom: 2rem;
   min-height: 90vh;
+}
+
+.contact-section-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 #message-form-wrapper {
@@ -488,7 +516,7 @@ code {
 #more-contacts {
   display: flex; 
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-basis: 50%;
 }
