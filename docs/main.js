@@ -64,6 +64,8 @@ for (tab of portfolioTabList) {
 	);
 }
 
+// Event listener for about tabs section (passing in CSS as arguments to tab-switch functions)
+
 const aboutTabList = document.querySelectorAll(
 	".about-container .left-sidebar-menu .left-sidebar-item .left-sidebar-link"
 );

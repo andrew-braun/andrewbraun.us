@@ -237,6 +237,13 @@ code {
 	color: var(--main-white);
 }
 
+.icon-muck-rack-2 {
+	display: flex;
+	font-size: 5rem;
+	text-align: center;
+	color: white;
+}
+
 /* portfolio items */
 .portfolio-item {
 	display: flex;
@@ -568,6 +575,7 @@ code {
 	max-height: 2.5rem;
 	padding: 1rem;
 	border-radius: 1rem;
+	cursor: default;
 	background-image: linear-gradient(
 		90deg,
 		var(--main-gray),
@@ -586,6 +594,7 @@ code {
 	margin: auto;
 	padding: 0;
 	color: var(--main-white);
+	pointer-events: none;
 }
 
 .key-header h4 {
@@ -631,10 +640,14 @@ code {
 			"header"
 			"image"
 			"content";
+		
 	}
 
-	.left-sidebar-menu {
+	#about-overview-content > div {
+		min-width: 100vw;
+
 	}
+	
 	.left-sidebar-list {
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -645,12 +658,15 @@ code {
 	.left-sidebar-item {
 		height: 100%;
 	}
+
 	.left-sidebar-item a {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
+		text-align: center;
 		font-size: 2rem;
+		min-height: 10rem;
 	}
 	.left-sidebar-item a .lnr {
 		font-size: 3rem;
