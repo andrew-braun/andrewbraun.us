@@ -483,6 +483,29 @@ code {
 	text-align: center;
 }
 
+.skills-info-block {
+}
+
+.skills-info-block h2, 
+.skills-info-block p, 
+.skills-info-block ul li {
+	color: var(--main-white);
+}
+
+#skills-info-block-1 {
+	background-color: var(--main-gray);
+}
+
+#skills-info-block-2 {
+	color: white;
+	background-color: var(--main-red);
+}
+
+#skills-info-block-3 {
+	color: white;
+	background-color: var(--main-blue);
+}
+
 /* CONTACT SECTION */
 .contact-page-section {
 	display: flex;
@@ -671,6 +694,11 @@ code {
 	.left-sidebar-item a .lnr {
 		font-size: 3rem;
 		margin-bottom: 2rem;
+	}
+
+	#main-contact-form, #contact-form-container {
+		width: 80vw;
+		font-size: 1.4rem;
 	}
 }
 
