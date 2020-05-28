@@ -433,6 +433,10 @@ code {
 	min-height: 40rem;
 }
 
+#about-info-skills {
+
+}
+
 #about-overview-content .about-info {
 }
 
@@ -441,6 +445,7 @@ code {
 	flex-direction: column;
 	align-items: center;
 	flex-basis: 25rem;
+	width: 30%;
 	flex-grow: 1;
 	flex-shrink: 1;
 
@@ -483,7 +488,13 @@ code {
 	text-align: center;
 }
 
+
+#about-skills {
+	width: 110%;
+}
+
 .skills-info-block {
+	
 }
 
 .skills-info-block h2, 
