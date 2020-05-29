@@ -431,9 +431,12 @@ code {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	min-height: 40rem;
+	width: 100%;
 }
 
 #about-info-skills {
+	min-width: 80%;
+	overflow: hidden;
 
 }
 
@@ -445,10 +448,8 @@ code {
 	flex-direction: column;
 	align-items: center;
 	flex-basis: 25rem;
-	width: 30%;
 	flex-grow: 1;
 	flex-shrink: 1;
-
 	padding: 0rem 2rem 2rem 2rem;
 	font-size: 1.5rem;
 }
@@ -490,7 +491,7 @@ code {
 
 
 #about-skills {
-	width: 110%;
+
 }
 
 .skills-info-block {
