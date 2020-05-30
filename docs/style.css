@@ -88,6 +88,16 @@ code {
 	border-bottom: 1px solid black;
 }
 
+button {
+	transition: background-color .5s ease-in-out, 
+				color .5s ease-in-out;
+}
+
+button:hover {
+	background-color: var(--main-white);
+	color: var(--main-black);
+}
+
 /* MAIN PAGE HEADER */
 #front-page-heading {
 	text-transform: uppercase;
@@ -184,6 +194,11 @@ code {
 
 	background-color: var(--main-white);
 	font-size: 1.5rem;
+	transition: background-color .3s ease-out;
+}
+
+.content-selector-button:hover {
+	background-color: var(--main-red);	
 }
 
 .content-selector-button a {
@@ -192,6 +207,8 @@ code {
 	line-height: 3rem;
 	color: var(--main-gray);
 }
+
+
 
 /* External link container (as flex item) */
 .external-link-container {
@@ -231,7 +248,11 @@ code {
 	font-size: 1.3rem;
 }
 
+ .social-icon:hover {
+}
+
 .social-icon {
+	display: block;
 	font-size: 5rem;
 	margin: 0.5rem;
 	color: var(--main-white);
@@ -255,6 +276,10 @@ code {
 	background-color: var(--main-gray);
 	border-radius: 1rem;
 	overflow: hidden;
+}
+
+.portfolio-item:hover {
+	background-color: var(--main-white);
 }
 
 .portfolio-item-link {
