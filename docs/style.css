@@ -89,13 +89,14 @@ code {
 }
 
 button {
-	transition: background-color .5s ease-in-out, 
-				color .5s ease-in-out;
+	transition: background-color .3s ease-out, 
+				color .3s ease-out;
 }
 
 button:hover {
 	background-color: var(--main-white);
 	color: var(--main-black);
+	cursor: pointer;
 }
 
 /* MAIN PAGE HEADER */
@@ -161,6 +162,11 @@ button:hover {
 
 .page-scroll-container .lnr-chevron-down {
 	font-size: 5rem;
+	transition: font-size .3s ease-out;
+}
+
+.page-scroll-container .lnr-chevron-down:hover {
+	font-size: 5.8rem;
 }
 
 /* PORTFOLIO SECTION */
@@ -212,6 +218,7 @@ button:hover {
 
 /* External link container (as flex item) */
 .external-link-container {
+	position: relative;
 	padding: 1rem;
 }
 
@@ -221,7 +228,12 @@ button:hover {
 	flex-wrap: wrap;
 }
 
+#portfolio-content-writing .external-link-container {
+	width: 100%;
+}
+
 .external-link-item {
+	position: relative;
 	display: flex;
 	flex-basis: 10rem;
 	justify-content: center;
@@ -230,38 +242,54 @@ button:hover {
 
 	min-width: 10rem;
 	max-width: 30%;
-	padding: 0.5rem;
+
 	margin: 0.5rem;
+	padding: 0.5rem;
 	background-color: hsla(0, 0%, 40%, 0.35);
 	border-radius: 0.3rem;
 	text-align: center;
+	transition: background-color .3s ease-in-out;
 }
 
 .external-link-item .social-item-link {
 	display: flex;
 	flex-direction: column;
-	flex-basis: 10rem;
-	min-width: 10rem;
+	justify-content: space-between;
+	flex-basis: 12rem;
+	min-width: 12rem;
 	flex-shrink: 1;
 	flex-grow: 1;
 	color: var(--main-white);
-	font-size: 1.3rem;
+	font-size: 1.5rem;
+	
 }
 
- .social-icon:hover {
+.external-link-item:hover {
+	background-color: var(--main-red);
+	opacity: 1;
 }
 
 .social-icon {
+	position: relative;
 	display: block;
+	padding: 1rem;
 	font-size: 5rem;
-	margin: 0.5rem;
 	color: var(--main-white);
 }
+
+
+/* .social-icon:hover, 
+.external-link-item:hover,
+.external-social-item-link span:hover {
+	color: var(--main-red);
+} */
+
 
 .icon-muck-rack-2 {
 	display: flex;
 	font-size: 5rem;
 	text-align: center;
+	justify-content: center;
 	color: white;
 }
 
@@ -279,7 +307,7 @@ button:hover {
 }
 
 .portfolio-item:hover {
-	background-color: var(--main-white);
+	background-color: var(--main-red);
 }
 
 .portfolio-item-link {
@@ -296,11 +324,18 @@ button:hover {
 	min-width: 0;
 	line-height: 0;
 	overflow: hidden;
+	background-color: var(--main-blue);
 }
 
 .portfolio-item-image {
 	max-width: 100%;
 	height: auto;
+	z-index: 100;
+	transition: all .3s ease-in-out;
+}
+
+.portfolio-item-image:hover {
+	opacity: .75;
 }
 
 .portfolio-item-title {
@@ -325,6 +360,7 @@ button:hover {
 	width: 100%;
 	color: white;
 }
+
 
 /* ABOUT ME */
 
@@ -377,6 +413,11 @@ button:hover {
 	text-transform: uppercase;
 	font-size: 1.8rem;
 	color: white;
+	transition: background-color .3s ease-out;
+}
+
+.left-sidebar-link:hover {
+	background-color: var(--main-black);
 }
 
 .about-content {
@@ -621,6 +662,11 @@ button:hover {
 
 #more-contacts .external-link-item {
 	background-color: var(--main-blue);
+	transition: background-color .5s ease-in-out;
+}
+
+#more-contacts .external-link-item:hover {
+	background-color: var(--main-black);
 }
 
 #social-contacts .socicon {
@@ -636,17 +682,13 @@ button:hover {
 	padding: 1rem;
 	border-radius: 1rem;
 	cursor: default;
-	background-image: linear-gradient(
-		90deg,
-		var(--main-gray),
-		var(--main-black),
-		var(--main-gray)
-	);
-	transition: all 1s ease-in-out;
+	background-color: var(--main-black);
+	transition: background-color .2s ease;
 }
 
 .key-container:hover {
-	background-color: lightgray;
+	background-color: var(--main-gray);
+	cursor: pointer;
 }
 
 .key-header {
