@@ -691,7 +691,7 @@ input:hover, textarea:hover {
 	border-radius: 1rem;
 	cursor: default;
 	background-color: var(--main-black);
-	transition: background-color .2s ease;
+	transition: background-color .2s ease, max-height .5s ease;
 }
 
 .key-container:hover {
