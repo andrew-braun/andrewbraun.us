@@ -180,6 +180,7 @@ input:hover, textarea:hover {
 /* PORTFOLIO SECTION */
 .portfolio-container {
 	display: flex;
+	background-color: var(--main-black);
 }
 
 .tabbed-container-content {
