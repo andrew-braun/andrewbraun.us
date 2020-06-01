@@ -468,6 +468,10 @@ input:hover, textarea:hover {
 	color: var(--main-black);
 }
 
+.about-header-text p {
+	text-align: left;
+}
+
 #about-header-text-1 {
 }
 
@@ -485,7 +489,9 @@ input:hover, textarea:hover {
 	grid-area: image;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
+	align-items: center;
+	
 }
 
 .about-img-container {
@@ -499,6 +505,15 @@ input:hover, textarea:hover {
 	flex-basis: 35rem;
 	border-radius: 1.5rem;
 	max-width: 35rem;
+}
+
+.about-info-side-column .about-header-text h3 {
+	text-align: center;
+}
+
+.about-info-side-column .about-header-text p {
+	font-size: 1.2rem;
+	text-align: center;
 }
 
 .about-info {
