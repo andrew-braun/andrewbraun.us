@@ -754,6 +754,20 @@ input:hover, textarea:hover {
 	html {
 		font-size: 9px;
 	}
+
+	.file-tab-container {
+		width: 100vw;
+	}
+
+	.content-selector-button {
+		width: 50%;
+		height: 100%;
+	}
+
+	.content-selector-buton a {
+		font-size: 3rem;
+	}
+
 	.about-container {
 		grid-template-columns: auto;
 		grid-template-areas:
